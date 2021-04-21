@@ -1,0 +1,93 @@
+{{ define "user/add.html" }}
+<!DOCTYPE html>
+<html>
+<head>
+    {{template "header" }}
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel-body">
+                <a href="index" class="btn btn-sm btn-primary "><strong>返回</strong></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <form role="form" id="gd_form" action="updateData" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">账号</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="account" placeholder="登录账号">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">用户组</label>
+                            <div class="col-sm-4">
+                                <select class="form-control" name="group_id">
+                                    {{ range .group_list }}
+                                        <option value="{{ .Id }}">{{ .Name }}</option>
+                                    {{end}}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">昵称</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="name" placeholder="昵称">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">过期时间</label>
+                            <div class="col-sm-4">
+                                <input type="text" name="expiration" id="expiration"
+                                       class="form-control laydate-icon form-control layer-date">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-primary pull-left m-t-n-xs" type="button" id="gb_button">保存内容
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 全局js -->
+{{template "footer" }}
+<script src="/static/admin/js/plugins/layer/laydate/laydate.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#gb_button').click(function () {//点击按钮提交
+            $.ajax({
+                type: "POST",
+                url: $('#gd_form').attr("action"),
+                data: $('#gd_form').serialize(),
+                async: false,
+                error: function (request) {
+                    layer.msg('网络错误', {icon: 1});
+                },
+                success: function (data) {
+                    if (data.code == 200) {
+                        layer.msg(data.msg, {time: 10000, icon: 1});
+                        window.location.replace(data.url);
+                    } else {
+                        layer.msg(data.msg, {icon: 2});
+                    }
+                }
+            });
+            return false;
+        });
+        laydate({elem: '#expiration', event: 'focus'});
+    });
+</script>
+</body>
+</html>
+{{end}}

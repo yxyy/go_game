@@ -1,0 +1,63 @@
+{{ define "menu/index.html" }}
+<!DOCTYPE html>
+<html>
+<head>
+    {{template "header" }}
+    <style>
+        .btn-uesr{
+            padding:1px 8px
+        }
+    </style>
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-body">
+                    <a href="add" class="btn btn-primary ">新增菜单</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <div class="dd" id="nestable">
+                            <ol class="dd-list">
+                                {{ range .menuList }}
+                                <li class="dd-item" data-id="{{.Weight}}">
+                                    <div class="dd-handle">
+                                        <span class="label label-info"><i class="fa {{.Icon}}"></i></span>{{.Name}}
+                                    </div>
+                                    <ol class="dd-list">
+                                        {{ range .Children }}
+                                        <li class="dd-item" data-id="{{.Weight}}">
+                                            <div class="dd-handle" >
+                                                <span class="label"></span>{{.Name}}
+                                                <span class="pull-right" ><a href="" class="btn btn-success btn-uesr">编辑</a><a href="" class="btn btn-danger btn-uesr">删除</a> </span>
+                                            </div>
+                                        </li>
+                                        {{end}}
+                                    </ol>
+                                </li>
+                                {{end}}
+                            </ol>
+                        </div>
+                        <div class="m-t-md">
+                            <h5>数据：</h5>
+                        </div>
+                        <textarea id="nestable2-output" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 全局js -->
+{{template "footer" }}
+
+</body>
+
+</html>
+{{end}}

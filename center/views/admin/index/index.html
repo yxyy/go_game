@@ -1,0 +1,21 @@
+{{ define "admin/index.html" }}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        {{ template "header" }}
+    </head>
+    <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+    <div id="wrapper">
+        <!--左侧导航开始-->
+        {{ template "left" .}}
+        <!--左侧导航结束-->
+        <!--右侧开始-->
+        {{ template "right" .}}
+        <!--右侧结束-->
+    </div>
+    {{ template "footer" }}
+    </body>
+    </html>
+{{ end }}
+
+

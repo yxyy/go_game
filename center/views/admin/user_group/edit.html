@@ -1,0 +1,178 @@
+{{ define "user_group/edit.html" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{template "header" }}
+    <link href="/static/admin/css/plugins/iCheck/custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel-body">
+                <a href="{{ .admin }}userGroup/index" class="btn btn-primary ">返回</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <form class="form-horizontal" id="gd_form" action="{{ .admin }}userGroup/setUserGroupPermit">
+            <div class="col-sm-12">
+                <input type="hidden" name="id" readonly="readonly" value="{{ .id }}">
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">名称</label>
+                    <div class="col-sm-5">
+                        <input type="text" name="name" value="{{ .name }}" readonly="readonly" class="form-control" placeholder="名称">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">标识</label>
+                    <div class="col-sm-5">
+                        <input class="form-control" value="{{ .mark }}" readonly="readonly" type="text" name="mark" placeholder="标识">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">描述</label>
+                    <div class="col-sm-5">
+                        <textarea class="form-control" name="description">{{ .description }}</textarea>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <label class="col-sm-1 control-label">菜单权限</label>
+                <div class="col-md-5">
+                    <table class="table table-condensed">
+                        <tr>
+                            <th style="width: 100px">权限分组</th>
+                            <th style="width: 100px">实际权限</th>
+                        </tr>
+                        {{ range $k,$v := .all_permits}}
+                        <tr>
+                            <td>
+                                <label  class="checkbox-inline i-checks">
+                                    <input type="checkbox" data-all="0" class="{{ $k }}" onclick="isMenuPermitAll(this)" data-menu="{{ $k }}" >{{ $k }}
+                                </label>
+                            </td>
+                            <td>
+                                 {{ range  $Userdata := $v }}
+
+                                 {{ range  $data := $Userdata.UserChildPermit }}
+                                    <label  class="checkbox-inline i-checks">
+                                        <input type="checkbox" class="{{ $k }}" value="{{$data.Id}}" name="permit[]" checked>{{ $data.Name }}
+                                    </label>
+                                {{end}}
+                                                                {{end}}
+
+                                 {{ range $Childdata :=  $v}}
+                                 {{ range $data := $Childdata.ChildPermit}}
+                                <label  class="checkbox-inline i-checks">
+                                    <input type="checkbox" class="{{ $k }}" value="{{$data.Id}}" name="permit[]" >{{ $data.Name }}
+                                </label>
+                                {{end}}
+                                {{end}}
+                            </td>
+                        </tr>
+                        {{end}}
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <label class="col-sm-1 control-label">数据权限</label>
+                <div class="col-md-5">
+                    <table class="table table-condensed">
+                        <tr>
+                            <th style="width: 100px">专服分组</th>
+                            <th style="width: 100px">实际数据权限</th>
+                        </tr>
+                        {{ range $key , $val := $.all_data_permits}}
+                        <tr>
+                            <td>
+                                <label class="checkbox-inline i-checks">
+                                    <input type="checkbox" data-all="0" class="{{ .Channel }}" onclick="isDataPermitAll(this)" data-info="{{ .Channel }}">{{ .Channel }}
+                                </label>
+                            </td>
+                            <td>
+                               {{ range  $data := $val.UserChildPackage }}
+                                    <label  class="checkbox-inline i-checks">
+                                            <input type="checkbox" class="{{ $val.Channel }}" value="{{ $val.Channel }}_{{ $data }}" name="data_permit[]" checked >{{ $data }}
+                                    </label>
+                                {{end}}
+                              {{ range  $data :=  $val.ChildPackage }}
+                                <label  class="checkbox-inline i-checks">
+                                        <input type="checkbox"   class="{{ $val.Channel }}" value="{{ $val.Channel }}_{{ $data }}" name="data_permit[]" >{{ $data }}
+                                </label>
+                              {{end}}
+                            </td>
+                        </tr>
+                        {{end}}
+
+
+                    </table>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12 col-sm-offset-2">
+                    <button class="btn btn-primary pull-left m-t-n-xs" type="button" id="gb_button">保存内容
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{{template "footer" }}
+<script src="/static/admin/js/plugins/iCheck/icheck.min.js"></script>
+
+<script type="text/javascript">
+    $('.i-checks').iCheck({
+        checkboxClass: 'icheckbox_square-green',
+        radioClass: 'iradio_square-green',
+    });
+    function isMenuPermitAll(obj) {
+        var menu = $(obj).data("menu");
+        var all = $(obj).data("all");
+        if (all == 0) {
+            $("." + menu).prop("checked", true);
+            $(obj).data("all", 1);
+        } else {
+            $("." + menu).prop("checked", false);
+            $(obj).data("all", 0);
+        }
+    }
+    function isDataPermitAll(obj) {
+        var info = $(obj).data("info");
+        var all = $(obj).data("all");
+        if (all == 0) {
+            $("." + info).prop("checked", true);
+            $(obj).data("all", 1);
+        } else {
+            $("." + info).prop("checked", false);
+            $(obj).data("all", 0);
+        }
+    }
+    $('#gb_button').click(function () {//点击按钮提交
+        $.ajax({
+            type: "POST",
+            url: $('#gd_form').attr("action"),
+            data: $('#gd_form').serialize(),
+            async: false,
+            error: function (request) {
+                layer.msg('网络错误', {icon: 1});
+            },
+            success: function (data) {
+                if (data.success == true) {
+                    layer.msg(data.msg, {time: 2000, icon: 1});
+                    window.location.replace(data.data.url);
+                } else {
+                    layer.msg(data.msg, {icon: 2});
+                }
+            }
+        });
+        return false;
+    });
+
+</script>
+</body>
+</html>
+{{end}}

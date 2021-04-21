@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{{ define "admin/login/index.html" }}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一夕烟云</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="/static/admin/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/static/admin/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="/static/admin/css/animate.css" rel="stylesheet">
+    <link href="/static/admin/css/style.css?v=4.1.0" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+    <script>
+        if (window.top !== window.self) {
+            window.top.location = window.location;
+        }
+    </script>
+</head>
+<body class="gray-bg">
+<div class="middle-box text-center loginscreen  animated fadeInDown">
+    <div>
+        <h3>欢迎使用 YXYY 图片后台</h3>
+        <form class="m-t" id="gb_form" action="/admin/login">
+            <div class="form-group">
+                <input type="text" class="form-control" name="account" value="" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" value="" required="required">
+            </div>
+            <button type="button" class="btn btn-primary block full-width m-b" id="gb_button">登 录</button>
+            <div class="form-group">
+                <label id="err_msg"></label>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- 全局js -->
+<script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
+<script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/static/admin/js/plugins/layer/layer.min.js"></script>
+<script type="text/javascript">
+    $('#gb_button').click(function () {
+        $('#err_msg').hide();
+        $.ajax({
+            type: "POST",
+            url: $('#gb_form').attr("action"),
+            data: $('#gb_form').serialize(),
+            async: false,
+            error: function (request) {
+                layer.msg('网络错误', {icon: 1});
+            },
+            success: function (data) {
+                if (data.code == 200) {
+                    window.location.replace(data.url);
+                } else {
+                    $('#err_msg').show().html("<span style='color:red'>" + data.msg + "</span>");
+                }
+            }
+        });
+        return false;
+    });
+</script>
+</body>
+</html>
+{{ end }}

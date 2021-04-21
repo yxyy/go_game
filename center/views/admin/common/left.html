@@ -1,0 +1,45 @@
+{{ define "left" }}
+    <!--左侧导航开始-->
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="nav-close"><i class="fa fa-times-circle"></i>
+        </div>
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <span><img alt="image" class="img-circle" src="/static/admin/img/logo.png"/></span>
+
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs"><strong class="font-bold">一夕烟云</strong></span>
+                        </span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="">安全退出</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">YX
+                    </div>
+                </li>
+
+                {{ range .menuList }}
+                <li>
+                    <a href="{{.Url}}">
+                        <i class="fa {{.Icon}} fa-fw"></i>
+                        <span class="nav-label">{{.Name}}</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                {{ range .Children }}
+                            <li>
+                                <a class="J_menuItem" href="/admin/{{ .Url }}">{{.Name}}</a>
+                            </li>
+                {{end}}
+                    </ul>
+                </li>
+                {{end}}
+            </ul>
+        </div>
+    </nav>
+    <!--左侧导航结束-->
+{{ end }}

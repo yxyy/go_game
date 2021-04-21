@@ -1,0 +1,57 @@
+{{ define "footer" }}
+    <!-- 全局js -->
+    <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/static/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/static/admin/js/plugins/layer/layer.min.js"></script>
+
+    <!-- 自定义js -->
+    <script src="/static/admin/js/hplus.js?v=4.1.0"></script>
+    <script type="text/javascript" src="/static/admin/js/contabs.js"></script>
+    <script type="text/javascript" src="/static/admin/js/content.js"></script>
+    <script type="text/javascript" src="/static/admin/js/enter_key.js"></script>
+
+
+    <!-- 第三方插件 -->
+    <script src="/static/admin/js/plugins/pace/pace.min.js"></script>
+
+<script>
+    $("#langSel li").click(function () {
+        var lang = $(this).data("title");
+        $.ajax({
+            type: "POST",
+            url: "{{ .admin }}langSel",
+            data: {lang: lang},
+            async: false,
+            error: function (request) {
+                layer.msg('网络错误', {icon: 1});
+            },
+            success: function (data) {
+                if (data.success == true) {
+                    layer.msg(data.msg, {time: 2000, icon: 1});
+                    window.location.replace(data.data.url);
+                } else {
+                    layer.msg(data.msg, {icon: 2});
+                }
+            }
+        });
+    })
+
+    function getLocalTime(nS) {
+        return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
+    }
+
+    function timestampToTime(timestamp) {
+        var date = new Date(timestamp * 1000);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+        var Y = date.getFullYear() + '-';
+        var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+        var D = date.getDate() + ' ';
+        var h = date.getHours() + ':';
+        var m = date.getMinutes() + ':';
+        var s = date.getSeconds();
+        return Y + M + D + h + m + s;
+    }
+</script>
+
+{{ end }}
