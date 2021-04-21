@@ -1,0 +1,29 @@
+#版本
+version: 1.0
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: root
+  dbname: go_game
+
+es:
+  host : http://127.0.0.1
+  port :  9200
+
+session_secret: yxyy_go_picture_v1.0
+
+crawler_status:
+  1 :  启动
+  2 :  关闭
+
+web :
+  netbian:
+    name :  彼岸图网
+    mark :  netbian
+    domain : http://pic.netbian.com/
+
+
+# tkoen
+secret_key : xNioXbKbMMtYXYYEDkbZU0u9VmN9XY8

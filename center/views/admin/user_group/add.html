@@ -1,0 +1,80 @@
+{{ define "user_group/add.html" }}
+<!DOCTYPE html>
+<html>
+<head>
+    {{template "header" }}
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel-body">
+                <a href="index" class="btn btn-primary ">返回</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <form role="form" id="gd_form" action="" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">名称</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="name" class="form-control" placeholder="名称">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">标识</label>
+                            <div class="col-sm-5">
+                                <input class="form-control" type="text" name="mark" placeholder="标识">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">描述</label>
+                            <div class="col-sm-5">
+                                <textarea class="form-control" name="description"></textarea>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-primary pull-left m-t-n-xs" type="button" id="gb_button">保存内容
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 全局js -->
+{{template "footer" }}
+<script>
+    $(document).ready(function () {
+        $('#gb_button').click(function () {//点击按钮提交
+            $.ajax({
+                type: "POST",
+                url: "add",
+                data: $('#gd_form').serialize(),
+                async: false,
+                error: function (request) {
+                    layer.msg('网络错误', {icon: 1});
+                },
+                success: function (data) {
+                    if (data.code == 200) {
+                        layer.msg(data.msg, {time: 2000, icon: 1});
+                        window.location.replace(data.url);
+                    } else {
+                        layer.msg(data.msg, {icon: 2});
+                    }
+                }
+            });
+            return false;
+        });
+    });
+</script>
+</body>
+</html>
+{{end}}
