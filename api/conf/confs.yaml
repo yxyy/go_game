@@ -24,6 +24,7 @@ secret_key : xNio**************************9XY8
 
 #log
 log:
+  is_open : true
   log_dir : ./logs
   secret_key : xNio**************************9XY8
   urls : http://127.0.0.1:8060/logs/push/

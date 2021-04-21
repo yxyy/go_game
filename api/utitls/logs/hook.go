@@ -6,6 +6,8 @@ import (
 	"github.com/spf13/viper"
 	"lhc.go.game.sdk/utitls/nets"
 	"net/url"
+	"time"
+	"context"
 )
 
 var RequestId string
@@ -49,7 +51,9 @@ func (l *LogHook) Fire(entry *logrus.Entry) error {
 	}
 	data["data"]=entry.Data
 
-	bytes, err := nets.Post(loguUrl, "application/json", data)
+	ctx, cancelFunc := context.WithTimeout(context.Background(), 2*time.Second)
+	defer cancelFunc()
+	bytes, err := nets.Post(ctx,loguUrl, "application/json", data)
 	if err!=nil {
 		logrus.Println(err)
 	}

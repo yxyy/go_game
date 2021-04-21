@@ -11,7 +11,6 @@ import (
 var HttpLogger = logrus.New()
 
 func InitLogger() error {
-
 	hook := NewLogHook()
 	//全局日志
 	textformatter := logrus.TextFormatter{

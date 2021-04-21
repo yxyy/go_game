@@ -1,12 +1,14 @@
 package logs
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 	"lhc.go.game.sdk/utitls/nets"
 	"net/url"
+	"time"
 )
 
 type HttpHook struct {
@@ -47,10 +49,18 @@ func (l *HttpHook) Fire(entry *logrus.Entry) error {
 	}
 	fmt.Printf("data:%#v\n",logData)
 
-	bytes, err := nets.Post(loguUrl, "application/json", logData)
-	if err!=nil {
-		logrus.Println(err)
+	ctx, cancelFunc := context.WithTimeout(context.Background(), 800*time.Millisecond)
+	defer cancelFunc()
+
+	go nets.Post(ctx,loguUrl, "application/json", logData)
+	//bytes, err := nets.Post(ctx,loguUrl, "application/json", logData)
+	//if err!=nil {
+	//	fmt.Println(err)
+	//}
+	//fmt.Println(string(bytes))
+	select {
+	case <-ctx.Done():
+		fmt.Println("success......")
 	}
-	fmt.Println(string(bytes))
 	return nil
 }

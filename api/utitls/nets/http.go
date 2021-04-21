@@ -11,6 +11,7 @@ import (
 	"net/url"
 	"strconv"
 	"time"
+	"context"
 )
 
 func Get(urls string) ([]byte,error) {
@@ -43,7 +44,7 @@ func do(method string, urls string) (*http.Response,error) {
 	return  client.Do(request)
 }
 
-func Post(urls string , contentType string , data map[string]interface{}) ([]byte,error) {
+func Post(ctx context.Context,urls string , contentType string , data map[string]interface{}) ([]byte,error) {
 
 	tick := strconv.Itoa(int(time.Now().Unix()))
 	data["tick"] = tick

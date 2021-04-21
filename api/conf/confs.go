@@ -6,6 +6,12 @@ import (
 	"lhc.go.game.sdk/cmd"
 )
 
+var Conf Config
+
+type Config struct {
+	LogIsOpen bool
+}
+
 func InitConfige() error {
 
 	if *cmd.Config !="" {
@@ -18,5 +24,6 @@ func InitConfige() error {
 		fmt.Printf("Fatal error config file: %s \n", err)
 		return err
 	}
+	Conf.LogIsOpen = viper.GetBool("log.is_open")
 	return nil
 }

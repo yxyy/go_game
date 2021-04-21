@@ -4,13 +4,14 @@ import "lhc.go.game.sdk/model"
 
 type XingwanCallback struct {
 	OrderId string `json:"orderId" form:"orderId" gorm:"orderId"`
-	UserId string `json:"user_id"`
-	AppId string
+	UserId string `json:"userId"  form:"userId"`
+	AppId string `json:"appId"  form:"appId"`
 	ServerId string
 	Amount float64
 	Time int64
 	Extension string
 	GoodsName string
+	Sign string `json:"sign" form:"sign"`
 	model.CommonParam
 	model.Role
 	model.Machine

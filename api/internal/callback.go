@@ -12,8 +12,8 @@ func Callback(c *gin.Context)  {
 	var callback  model.Order
 	switch c.Param("package") {
 	case "5001":
-		pk5001 := pk5001.NewXingwanCallback()
-		callback = pk5001
+		pk5001callback := pk5001.NewXingwanCallback()
+		callback = pk5001callback
 	default:
 		returnData.Code = model.StatusParamError
 		returnData.Msg = model.MsgIllegal
