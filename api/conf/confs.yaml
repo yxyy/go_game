@@ -1,0 +1,33 @@
+#WEB
+port : 8050
+web_root : /user
+# redis
+redis:
+  network  : tcp
+  addr : 127.0.0.1:6379
+
+#mongodb配置
+mongodb :
+  host: 127.0.0.1
+  port: 27017
+
+# mysql
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: root
+  dbname: go_game
+
+# tkoen
+secret_key : xNio**************************9XY8
+
+#log
+log:
+  log_dir : ./logs
+  secret_key : xNio**************************9XY8
+  urls : http://127.0.0.1:8060/logs/push/
+
+pk5001 :
+#  urls : http://xwsdk.shxingwan.com/v1/game-validate-user#
+urls : http://127.0.0.1:9999
