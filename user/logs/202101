@@ -1,0 +1,129 @@
+time="2021-01-04 16:16:11" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609748171269791600
+time="2021-01-04 16:23:26" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609748606644693700
+time="2021-01-04 16:23:43" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609748623506658100
+time="2021-01-04 16:24:26" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609748666914140900
+time="2021-01-04 16:35:37" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609749337893518700
+time="2021-01-04 16:38:05" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609749485958987600
+time="2021-01-04 16:40:32" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609749632791385900
+time="2021-01-04 16:40:59" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609749659996942000
+time="2021-01-04 16:41:04" level=info url=/logs/push/20210104_1609749659996942000 method=GET request_id=20210104_1609749664877221100
+time="2021-01-04 16:41:05" level=info url=/favicon.ico method=GET request_id=20210104_1609749665353248300
+time="2021-01-04 16:43:46" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609749826963491900
+time="2021-01-04 16:44:12" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609749852887974700
+time="2021-01-04 16:45:45" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609749945004243500
+time="2021-01-04 17:02:40" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609750960044300400 sign=b89c61a33d1e7c6b31de4c0ed9437442 tick=1609750960
+time="2021-01-04 17:04:49" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609751089324694800 sign=87f62baaaa4963c337f673d0f4b4daa2 tick=1609751089
+time="2021-01-04 17:07:26" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609751246259671000 sign=5c8c1da5fd6c481f54212677899b1194 tick=1609751246
+time="2021-01-04 17:07:46" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609751266928853200 sign=4960f75565e9e1ae8cbb21562512e7fd tick=1609751266
+time="2021-01-04 17:09:17" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609751357001005000 sign=29d88fac07369d9d52239d2657e34ed1 tick=1609751357
+time="2021-01-04 17:10:47" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609751447143160900 sign=5523de25c13957be8ebbc390266320ab tick=1609751447
+time="2021-01-04 17:11:53" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609751513561959800 sign=0004101bd1a9c2f0939a64c3497621dc tick=1609751513
+time="2021-01-04 17:21:41" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609752101553591000 sign=fa3825a376f11d5539f67cd3592cf641 tick=1609752101
+time="2021-01-04 17:22:44" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609752164123169800 sign=83fd62ad8d410c648ddd0391bf5cfb3a tick=1609752164
+time="2021-01-04 17:23:13" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609752193027823000 sign=94c22431081ea8649b642dc6a8a5b580 tick=1609752193
+time="2021-01-04 17:25:16" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609752316887907400 sign=f77f3958be4cb474a3a212e33a9a5f3a tick=1609752316
+time="2021-01-04 17:30:26" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609752626468614400 sign=87d0219182a93dd9f09641685469893c tick=1609752626
+time="2021-01-04 17:36:34" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609752994623671700
+time="2021-01-04 17:53:09" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609753989522576700
+time="2021-01-04 17:53:24" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609754004365425600
+time="2021-01-04 17:55:53" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609754153300944300
+time="2021-01-04 17:57:26" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609754246166255800
+time="2021-01-04 17:58:54" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609754334407302900
+time="2021-01-04 17:59:56" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609754396965881100
+time="2021-01-04 18:12:51" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609755171673191800
+time="2021-01-04 18:13:23" level=info url="/user?page=&length=10" method=POST postfrom="{\"id\":\"sehbjhwbfbuirjk\",\"jfdjhudhru\":\"5484867468464\"}" request_id=20210104_1609755203856032600
+time="2021-01-04 18:13:23" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210104_1609755203856032600
+time="2021-01-04 18:16:21" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609755381679203500
+time="2021-01-04 18:17:24" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609755444160777200
+time="2021-01-04 18:22:08" level=info url="/user?page=&length=10" method=GET request_id=20210104_1609755728956066600
+time="2021-01-05 09:42:57" level=info url="/user?page=&length=10" method=GET request_id=20210105_1609810977004074200
+time="2021-01-05 09:43:11" level=info url="/user?page=&length=10" method=GET request_id=20210105_1609810991531905100
+time="2021-01-05 10:21:19" level=info url="/user?page=&length=10" method=GET request_id=20210105_1609813279167750400
+time="2021-01-05 10:21:52" level=info url="/user?page=&length=10" method=GET request_id=20210105_1609813312448654000
+time="2021-01-05 10:22:10" level=info url="/user?page=&length=10" method=GET request_id=20210105_1609813330824705000
+time="2021-01-05 10:22:58" level=info url="/user?page=&length=10" method=GET request_id=20210105_1609813378440428500
+time="2021-01-05 10:24:11" level=info url="/user?page=&length=10" method=GET request_id=20210105_1609813451647615700
+time="2021-01-05 10:24:54" level=info url="/user?page=&length=10" method=GET request_id=20210105_1609813494961093100
+time=2021-01-05 10:10:37 level=info msg=请求日志 method=GET request_id=20210105_1609814246702090200 url_path=/user?page=&length=10
+time=2021-01-05 10:10:38 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609814285413304400 url_path=/user?page=&length=10
+time="2021-01-05 10:38:05" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210105_1609814285413304400
+time=2021-01-05 10:10:46 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609814761900557900 url_path=/user?page=&length=10
+time="2021-01-05 10:46:01" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF
+time=2021-01-05 10:10:47 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609814863998397500 url_path=/user?page=&length=10
+time="2021-01-05 10:47:44" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210105_1609814863998397500
+time=2021-01-05 10:10:48 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609814934196412600 url_path=/user?page=&length=10
+time="2021-01-05 10:48:54" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210105_1609814934196412600
+time=2021-01-05 10:10:51 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609815101071957400 url_path=/user?page=&length=10
+time="2021-01-05 10:51:41" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210105_1609815101071957400
+time=2021-01-05 10:10:51 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609815117565900800 url_path=/user?page=&length=10
+time="2021-01-05 10:51:57" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210105_1609815117565900800
+time=2021-01-05 10:10:59 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609815585352656600 url_path=/user?page=&length=10
+time="2021-01-05 10:59:45" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210105_1609815585352656600
+time=2021-01-05 11:11:01 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609815663779142400 url_path=/user?page=&length=10
+time="2021-01-05 11:01:03" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210105_1609815663779142400
+time=2021-01-05 11:11:02 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609815753863294900 url_path=/user?page=&length=10
+time="2021-01-05 11:02:33" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210105_1609815753863294900
+time=2021-01-05 11:11:06 level=info msg=请求日志 method=GET request_id=20210105_1609815994038032100 url_path=/user?page=&length=10
+time=2021-01-05 11:11:08 level=info msg=请求日志 method=GET request_id=20210105_1609816087035351200 url_path=/user?page=&length=10
+time=2021-01-05 11:11:08 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609816091078582500 url_path=/user?page=&length=10
+time="2021-01-05 11:08:11" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210105_1609816091078582500
+time=2021-01-05 11:11:13 level=info msg=请求日志 method=POST postfrom=map[NAME:15484] request_id=20210105_1609816408248723600 url_path=/user?page=&length=10
+time="2021-01-05 11:13:28" level=error code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210105_1609816408248723600
+time=2021-01-05 11:11:15 level=info msg=请求日志 method=POST postfrom=map[NAME:15484] request_id=20210105_1609816530854736300 url_path=/user?page=&length=10
+time="2021-01-05 11:15:30" level=error url="执行错误" code=400 file="D:/GOWOEK/go_game/user/controller/user/user.go26" msg=EOF request_id=20210105_1609816530854736300
+time=2021-01-05 11:11:16 level=info msg=请求日志 method=POST postfrom=map[NAME:15484] request_id=20210105_1609816563134582600 url_path=/user?page=&length=10
+time="2021-01-05 11:16:03" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609816563134582600
+time=2021-01-05 11:11:19 level=info msg=请求日志 method=POST postfrom=map[NAME:15484] request_id=20210105_1609816793226743100 url_path=/user?page=&length=10
+time="2021-01-05 11:19:53" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609816793226743100
+time=2021-01-05 11:11:21 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609816896315639400 url_path=/user?page=&length=10
+time="2021-01-05 11:21:36" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609816896315639400
+time=2021-01-05 11:11:24 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609817068742501700 url_path=/user?page=&length=10
+time="2021-01-05 11:24:28" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609817068742501700
+time=2021-01-05 11:11:40 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609818043719267200 url_path=/user?page=&length=10
+time="2021-01-05 11:40:43" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609818043719267200
+time=2021-01-05 11:11:44 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609818244187733300 url_path=/user?page=&length=10
+time="2021-01-05 11:44:04" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609818244187733300
+time=2021-01-05 11:11:44 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609818260785682600 url_path=/user?page=&length=10
+time="2021-01-05 11:44:20" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609818260785682600
+time=2021-01-05 11:11:47 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609818426892183400 url_path=/user?page=&length=10
+time="2021-01-05 11:47:06" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609818426892183400
+time=2021-01-05 11:11:49 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609818597414936700 url_path=/user?page=&length=10
+time="2021-01-05 11:49:57" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609818597414936700
+time=2021-01-05 11:11:53 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609818801443606500 url_path=/user?page=&length=10
+time="2021-01-05 11:53:21" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609818801443606500
+time=2021-01-05 11:11:55 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609818940337550800 url_path=/user?page=&length=10
+time="2021-01-05 11:55:40" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609818940337550800
+time=2021-01-05 11:11:56 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609818989921386800 url_path=/user?page=&length=10
+time="2021-01-05 11:56:29" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609818989921386800
+time=2021-01-05 11:11:57 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609819047985707900 url_path=/user?page=&length=10
+time="2021-01-05 11:57:27" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609819047985707900
+time=2021-01-05 11:11:58 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609819097637547800 url_path=/user?page=&length=10
+time="2021-01-05 11:58:17" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609819097637547800
+time=2021-01-05 12:12:00 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609819258869769800 url_path=/user?page=&length=10
+time="2021-01-05 12:00:58" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609819258869769800
+time=2021-01-05 12:12:03 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609819418452897400 url_path=/user?page=&length=10
+time="2021-01-05 12:03:38" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609819418452897400
+time=2021-01-05 12:12:04 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609819460505302700 url_path=/user?page=&length=10
+time="2021-01-05 12:04:20" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609819460505302700
+time=2021-01-05 12:12:04 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609819483034591300 url_path=/user?page=&length=10
+time="2021-01-05 12:04:43" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609819483034591300
+time=2021-01-05 12:12:05 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609819512083252800 url_path=/user?page=&length=10
+time="2021-01-05 12:05:12" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609819512083252800
+time=2021-01-05 12:12:09 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609819767916885600 url_path=/user?page=&length=10
+time="2021-01-05 12:09:27" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609819767916885600
+time=2021-01-05 12:12:10 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210105_1609819801766821700 url_path=/user?page=&length=10
+time="2021-01-05 12:10:01" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210105_1609819801766821700
+time=2021-01-06 15:03:56 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210106_1609919797718263000 url_path=/user?page=&length=10
+time="2021-01-06 15:56:37" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210106_1609919797718263000
+time=2021-01-06 16:04:28 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210106_1609921697096901200 url_path=/user?page=&length=10
+time="2021-01-06 16:28:17" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210106_1609921697096901200
+time=2021-01-06 16:04:28 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210106_1609921719286170400 url_path=/user?page=&length=10
+time="2021-01-06 16:28:39" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210106_1609921719286170400
+time=2021-01-06 16:04:33 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210106_1609922011938909200 url_path=/user?page=&length=10
+time="2021-01-06 16:33:31" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210106_1609922011938909200
+time=2021-01-06 16:04:34 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210106_1609922074244472800 url_path=/user?page=&length=10
+time="2021-01-06 16:34:34" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210106_1609922074244472800
+time=2021-01-06 16:04:34 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210106_1609922099927941900 url_path=/user?page=&length=10
+time="2021-01-06 16:34:59" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210106_1609922099927941900
+time=2021-01-06 16:04:38 level=info msg=请求日志 method=POST postfrom={"NAME":15484} request_id=20210106_1609922308246857000 url_path=/user?page=&length=10
+time="2021-01-06 16:38:28" level=error msg="执行错误" code=400 fields.msg=EOF file="D:/GOWOEK/go_game/user/controller/user/user.go26" request_id=20210106_1609922308246857000

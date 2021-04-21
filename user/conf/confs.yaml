@@ -1,0 +1,23 @@
+
+web_root : /user
+# redis
+redis:
+  network  : tcp
+  addr : 127.0.0.1:3306
+
+# mysql
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: root
+  dbname: go_game
+
+# tkoen
+secret_key : xNioXbKbMMtYXYYEDkbZU0u9VmN9XY8
+
+#log
+log:
+  log_dir : ./logs
+  secret_key : xNioXbKbMMtYXSmYEDkbZU0u9VmN9XY8
+  urls : http://127.0.0.1:8060/logs/push/
