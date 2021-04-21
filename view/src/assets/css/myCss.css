@@ -1,0 +1,133 @@
+/* 页面 */
+.dialog{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.search-box{
+    float: right;
+}
+.total{
+    float: left;
+    margin-top: 20px;
+}
+.pager {
+    margin-top: 20px;
+}
+.slect-box{
+    width: 100%;
+}
+.user-img{
+    width: 100px; 
+    height: 100px ;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.head-img{
+    width: 30px; 
+    height: 30px ;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.head-icon-img{
+    size: 8px;
+}
+
+.box-card{
+    min-height: 850px;
+}
+
+/* 菜单 */
+
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+    width: 200px;
+    min-height: 400px;
+}
+
+.aside-menu{
+    height: 100%;
+}
+
+/* 头 */
+.user{
+    position: fixed;
+    right: 3%;
+}
+.head-breadcrumb{
+    line-height: 55px;
+}
+
+/* 登陆 */
+.login{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('./../../assets/img/login.jpg');
+    background-size: cover;
+}
+.login .login-form {
+    background-color: #fff;
+    padding: 60px;
+}
+.login-div{
+    margin: auto;
+}
+.login .login-form .login-btn {
+    width: 45%;
+}
+
+.login .login-form .wechat-login-btn{
+    width: 47%;
+    background-color: #07c160;
+}
+
+.box-card-main {
+    width: 40%;
+    margin:0 auto;
+    margin-top: 30px;
+    /* line-height: 70px; */
+    
+}
+.box-card-main table {
+    margin:0 auto;
+    width: 50%;
+    line-height: 60px;
+    text-align: left;
+    background-color: antiquewhite;
+
+}
+.table-td{
+    margin-left: 50px;
+}
+.font-box {
+    margin:0 auto;
+    text-align: left;
+    line-height: 80px;
+}
+.font-left {
+    text-align: left;
+}
+.font-rigth {
+    text-align: right;
+}
+.font-center {
+    text-align: center;
+}
+.box-card-main .el-input{
+    width: 80%;
+}
+.box-card-main .el-input__inner{
+    margin-left: auto;
+}
+.my-from-item{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
